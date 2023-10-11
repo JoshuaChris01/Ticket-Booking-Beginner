@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Flexbox Pricing Table</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Sono', sans-serif;
+      background-color: rgb(36, 0, 36);
+    }
+
+    .pricing-container {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+
+
+    }
+
+    .pricing-plan {
+      background-color: #dbd3efd9;
+      padding: 10px;
+      flex-basis: 350px;
+      height: 300px;
+      max-width: 450px;
+      border-radius: 20px;
+      flex: 1;
+
+    }
+
+    .pricing-plan .plan-title {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .pricing-plan .plan-price {
+      font-size: 40px;
+      font-weight: 700;
+    }
+
+    .pricing-plan .plan-features {
+      list-style-type: none;
+      display: flex;
+      flex-flow: column;
+      align-items: flex-start;
+    }
+    .pricing-plan .plan-features li {
+      margin-bottom: 25px;
+    }
+
+    .pricing-plan .plan-button {
+      background-color: #ff6600;
+      color: #fff;
+      padding: 10px;
+      border-radius: 10px;
+      border: none;
+    }
+
+    /* Hint: What can you do with a media query and flexbox? */
+    @media (max-width: 1250px) {
+      .pricing-container {
+        height: 100%;
+        flex-flow: column;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+      }
+
+      .pricing-plan {
+        flex: 1;
+        width: 459px;
+      }
+
+
+      .pricing-plan .plan-features li {
+        margin-bottom: 10px;
+      }
+
+      .pricing-plan .plan-title {
+        font-size: 25px;
+        margin-bottom: 10px;
+      }
+
+      .pricing-plan .plan-price {
+        font-size: 50px;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="pricing-container">
+    <div class="pricing-plan">
+      <div class="plan-title">General Admission</div>
+      <div class="plan-price">$19.99/Ticket</div>
+      <ul class="plan-features">
+        <li>✅ Basic Event Entry</li>
+        <li>✅ Minimal Attendant Support</li>
+        <li>❌ No Guest Invites</li>
+      </ul>
+      <button class="plan-button">Purchase</a>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">VIP</div>
+      <div class="plan-price">$99.99/Ticket</div>
+      <ul class="plan-features">
+        <li>✅ Premium Seating,VIP Access</li>
+        <li>✅ Dedicated Attendants</li>
+        <li>✅ Guest invites varies by event </li>
+      </ul>
+      <button class="plan-button">Puchase</a>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">VVIP</div>
+      <div class="plan-price">$199.99/Ticket</div>
+      <ul class="plan-features">
+        <li>✅ Front-row Exclusive</li>
+        <li>✅ Extensive Support Team</li>
+        <li>✅ Includes Guest Invite</li>
+      </ul>
+      <button class="plan-button">Puchase</a>
+    </div>
+  </div>
+
+</body>
+
+</html>
